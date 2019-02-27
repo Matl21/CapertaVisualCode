@@ -35,6 +35,7 @@ Division:<input type="radio" name="operacion" value="4"><br><br>
     $numero2=$_POST['numero2'];
     $suma=0;
     $resta=0;
+    
     $multiplicacion=0;
     $division=0;
     //haciendo uso del radio button

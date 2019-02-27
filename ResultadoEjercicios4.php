@@ -7,8 +7,22 @@
     <title>Datos</title>
 </head>
 <body>
-    <h1>Datos traido de la pagina anterior</h1>
-    <?php
+
+<hr>
+    <form method="post">
+        <section>
+        <h1>Ingrese 2 numeros</h1>
+        Numero 1: <input type="number" name="numero1"><br><br>
+        Numero 2: <input type="number" name="numero2"><br><br>
+        <input type="submit" value="Enviar" name='ejercicio4'>
+        </section>
+    </form>
+
+
+<h1>Datos Respuesta</h1>
+
+<?php
+if(isset($_POST['ejercicio4'])){
 
 echo"<br>";
 $numero1=$_POST['numero1'];
@@ -24,7 +38,7 @@ else{
     echo  "El numero es impar ".$suma;
 }
 
-echo"<br>";echo"<br>";echo"<br>";
+echo"<br>";echo"<br>";echo"<br>";}
 
 ?>
 </body>

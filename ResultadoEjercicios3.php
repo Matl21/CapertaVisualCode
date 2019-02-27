@@ -9,11 +9,28 @@
 <body>
     <h1>Ejercicios 3</h1>
 
-    
-    <?php
+    <hr>
+    <form method="post">
+
+    <section>
+        
+        <h1>Ingrese Letra</h1>
+        Letra: <input type="text" name="letra"><br><br>
+        <input type="submit" value="Enviar" name="ejercicio3">
+        
+    </section>
+    </form>
+    <hr>
+
+
+
+
+<?php
+if(isset($_POST['ejercicio3'])){
+
 echo"<br>";
 $letra=$_POST['letra'];
-$letra = strtolower($letra)
+$letra = strtolower($letra);
 echo"<br>";echo"<br>";echo"<br>";
 
 if (($letra=="u")||($letra=="o")||($letra=="i")||($letra=="e")||($letra=="a")) {
@@ -23,8 +40,7 @@ if (($letra=="u")||($letra=="o")||($letra=="i")||($letra=="e")||($letra=="a")) {
 }
 
 echo"<br>";echo"<br>";echo"<br>";
-
+}
 ?>
 </body>
 </html>
-<?php

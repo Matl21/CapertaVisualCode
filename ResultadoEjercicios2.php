@@ -9,7 +9,25 @@
 <body>
     <h1>Datos traido de la pagina anterior</h1>
 
-    <?php
+    <hr>
+    <form  method="post">
+
+        <section>
+        
+        <h1>Ingrese DATOS</h1>
+        <br>
+        Dato 1:<input type="number" name="datos1"><br>
+        Dato 2:<input type="number" name="datos2"><br>
+        Dato 3:<input type="number" name="datos3"><br><br>
+
+        <input type="submit" value="Enviar" name="ejercicio2">
+        </section>
+     
+    </form>
+
+
+<?php
+if(isset($_POST['ejercicio2'])){
 echo"<br>";
 
 $datos1=$_POST['datos1'];
@@ -32,6 +50,7 @@ echo"<br>";echo"<br>";echo"<br>";
 
 
 echo"<br>";
+}
 ?>
 </body>
 </html>
